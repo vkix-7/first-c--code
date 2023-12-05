@@ -130,6 +130,35 @@ void pattern7(int n){
       
     }
 }
+void pattern8(int n){ 
+ 
+   for(int i=0; i<n; i++){
+        for(int j=0; j<n-i-1;j++){
+            cout << " ";
+        }
+         char ch = 'A';
+  int breakp =(2*i+1)/2;
+        for(int j=0; j<2*i+1; j++){
+            cout << ch ;
+            if(j<=breakp) ch++;
+            else ch--;
+        }
+        for (int j = 0; j < n - i - 1; j++) {
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
+void pattern9(int n){
+      for(int i=0;i<n;i++){
+        for(char ch = 'E'-i;ch<='E';ch++){
+cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
+
+
 int main(){
     int n;
     cin >> n ;
@@ -141,4 +170,6 @@ pattern5(n);
 cout<< endl;
 pattern6(n);cout<< endl;
 pattern7(n);cout<< endl;
+pattern8(n); cout<<endl;
+pattern9(n);
 }
