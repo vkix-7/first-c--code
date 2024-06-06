@@ -11,18 +11,15 @@ int fibonacci(int N){
 
    // Problem broken down into 2 functional calls
    // and their results combined and returned.
-   int last = fibonacci(N-1);
-   int slast = fibonacci(N-2);
-   
-   return last + slast;
+   return fibonacci(N-1)+fibonacci(N-2);
 
 }
 
 int main(){
   
   // Here, let’s take the value of N to be 4.
-  int N = 4;
-  cout<<fibonacci(6)<<endl;
+  int N ;
+  cout<<fibonacci(7)<<endl;
   return 0;
 
 }
