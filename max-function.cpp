@@ -1,28 +1,19 @@
-#include<bits/stdc++.h>
-using namespace std;
+##include <bit/std.c++>
 
-int fibonacci(int N){
-   
-   // Base Condition.
-   if(N <= 1)
-   {
-       return N;
-   }
+int main() {
+    // Initialize input data
+    std::vector<int> input = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    std::vector<int> v;
 
-   // Problem broken down into 2 functional calls
-   // and their results combined and returned.
-   int last = fibonacci(N-1);
-   int slast = fibonacci(N-2);
-   
-   return last + slast;
-
-}
-
-int main(){
   
-  // Here, let’s take the value of N to be 4.
-  int N = 4;
-  cout<<fibonacci(6)<<endl;
-  return 0;
+    for (int i = 0; i < input.size(); i += 2) {
+        v.push_back(input[i]);
+    }
 
+   
+ 
+    for (auto i : v) {
+        std::cout << i << " ";
+    }
+    return 0 ;
 }
